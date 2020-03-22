@@ -123,6 +123,10 @@ Queue1 : |   |   |   |   |   |
 
 Karena Queue1 sudah kosong, maka BFS tree traversal selesai.
 
+Dengan logika yang serupa, pencarian jalan ke state yang disebut "goal state" menggunakan teknik yang sama. Namun, selesainya traversal ditandai dengan ditemukannya posisi node yang memiliki goal state. Setelah selesai dengan pencarian, maka akan di print movementnya sesuai yang telah di input tiap move.
+
+Dalam program ini, goal state yang dimaksud adalah ```{1, 2, 3, 8, 0, 4, 7, 6, 5}```, tetapi user akan memasukkan initial state sendiri.
+
 
 ## Depth-First Search (DFS)
 Link ke file yang dibuat:
