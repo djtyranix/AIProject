@@ -316,6 +316,22 @@ void inputState(State * const state)
 	printf("\n");
 }
 
+void inputGoalState(State * const state)
+{
+	state->action = NA;
+	state->gameboard[0][0] = '1';
+	state->gameboard[0][1] = '2';
+	state->gameboard[0][2] = '3';
+	state->gameboard[1][0] = '8';
+	state->gameboard[1][1] = '0';
+	state->gameboard[1][2] = '4';
+	state->gameboard[2][0] = '7';
+	state->gameboard[2][1] = '6';
+	state->gameboard[2][2] = '5';
+
+	printf("\n");
+}
+
 void printBoard(char const gameboard[3][3])
 {
 	char row, column;
@@ -424,8 +440,7 @@ int main()
 	printf("Please input the initial state:\n");
     inputState(&init);
 
-    printf("\nPlease input the goal state:\n");
-    inputState(&goalState);
+    inputGoalState(&goalState);
 
     printf("Here's the initial board state:\n");
     printBoard(init.gameboard);
