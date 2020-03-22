@@ -127,6 +127,92 @@ Dengan logika yang serupa, pencarian jalan ke state yang disebut "goal state" me
 
 Dalam program ini, goal state yang dimaksud adalah ```{1, 2, 3, 8, 0, 4, 7, 6, 5}```, tetapi user akan memasukkan initial state sendiri.
 
+## Test Case
+**Goal State**:
+<table>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>0</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>6</td>
+    <td>5</td>
+  </tr>
+</table>
+
+**Test Case Init State**:
+<table>
+  <tr>
+    <td>
+      <table>
+        <caption>Easy</caption>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>6</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>0</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <caption>Medium</caption>
+        <tr>
+          <td>2</td>
+          <td>8</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>4</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <caption>Hard</caption>
+        <tr>
+          <td>2</td>
+          <td>8</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>6</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>5</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
 
 ## Depth-First Search (DFS)
 Link ke file yang dibuat:
