@@ -213,6 +213,19 @@ Dalam program ini, goal state yang dimaksud adalah ```{1, 2, 3, 8, 0, 4, 7, 6, 5
   </tr>
 </table>
 
+Berikut adalah hasil jalan program :
+Easy :
+
+![easy](https://github.com/djtyranix/AIProject/blob/master/8%20Puzzle/BFS/images/image1.png)
+
+Medium :
+
+![medium](https://github.com/djtyranix/AIProject/blob/master/8%20Puzzle/BFS/images/image2.png)
+
+Hard :
+
+![hard](https://github.com/djtyranix/AIProject/blob/master/8%20Puzzle/BFS/images/image3.png)
+
 
 ## Depth-First Search (DFS)
 Link ke file yang dibuat:
