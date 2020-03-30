@@ -230,7 +230,52 @@ Hard :
 ## Depth-First Search (DFS)
 Link ke file yang dibuat:
 * [8puzzledfs.c](https://github.com/djtyranix/AIProject/blob/master/8%20Puzzle/DFS/8puzzledfs.c) - 8-Puzzle Solver DFS
---Untuk File Belum Ada--
+
+Depth-First Search adalah suatu teknik uninformed search yang dimana algoritma yang digunakan adalah kebalikan dari BFS. Dalam BFS, kita mencari node dengan level order, dimana kita akan mengeksplor node yang selevel terlebih dahulu, baru dilanjutkan dengan depth-level yang lebih dalam. Dalam DFS, kita akan mencari node dengan depth order, dimana kita akan mengeksplor node sampai paling dasar terlebih dahulu, lalu akan dilanjutkan dengan backtrack ke parent node. Untuk DFS, struktur data yang digunakan adalah stack.
+
+Misal ada tree sebagai berikut :
+```
+                    A
+                   / \
+                  B   C
+                 /\   /\
+                D  E F  G
+```
+
+Traverse akan dimulai dari root node, A. Kemudian, children dari A akan di list dan dimasukkan kedalam stack.
+```
+Stack1 : |   |   |   | B | C |
+```
+
+Node B dieksplor, node B di pop dari stack, dan childrennya dimasukkan ke dalam stack.
+```
+Stack1 : |   |   | D | E | C |
+```
+
+Node D dieksplor, node D di pop dari stack. D adalah leaves, melanjutkan sequence.
+```
+Stack1 : |   |   |   | E | C |
+```
+
+Node E dieksplor, node E di pop dari stack. E adalah leaves, melanjutkan sequence.
+```
+Stack1 : |   |   |   |   | C |
+```
+
+Node C dieksplor, node C di pop dari stack, dan childrennya dimasukkan ke dalam stack.
+```
+Stack1 : |   |   |   | F | G |
+```
+
+Node F dieksplor, node F di pop dari stack. F adalah leaves, melanjutkan sequence.
+```
+Stack1 : |   |   |   |   | G |
+```
+
+Node G dieksplor, dan karena node G adalah leaves, maka selesailah sequence DFS.
+
+Cara pencarian goal state persis dengan algoritma lainnya, yaitu dengan pencocokan dan pencarian path ke goal state yang ditemukan. Namun, dikarenakan tree state yang dibentuk tidak akan memiliki leaves (karena walau bagaimanapun, game akan dapat melanjutkan move), maka jika state bukan merupakan state yang hanya perlu 1 move untuk mencapai goal state, maka akan terjadi infinite loop.
+
 
 ## Iterative Deepening Search (IDS)
 Link ke file yang dibuat:
