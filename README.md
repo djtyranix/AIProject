@@ -303,3 +303,9 @@ n-Queen adalah sebuah game dimana kita harus menyusun piece of queen dari permai
 Untuk n-Queen sendiri dapat diselesaikan dengan beberapa algoritma, dan akan dibahas 3 metode penyelesaian, yaitu dengan Uninformed Search, Hill-Climbing Search, dan Constraint Satisfaction Problem (4-queen).
 
 ## Uninformed Search
+Untuk uninformed search, akan seperti pada 8-puzzle, dimana program akan mencari goal state dengan cara brute force, tanpa adanya
+pengetahuan tentang sesuatu layaknya informed search. Dalam BFS, mulai dari random initial state, maka akan terus dicari goal state
+dengan membuat suatu search tree untuk current dan next state. Ketika sudah mendapatkan bahwa salah satu node adalah goal state, maka
+pencarian akan berhenti dan mengembalikan goal state tanpa perlu tracking down jalur untuk menuju ke state tersebut.
+
+## Hill-Climbing Search
