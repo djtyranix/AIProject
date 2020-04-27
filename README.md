@@ -296,6 +296,7 @@ A-Star merupakan salah satu algoritma Heuristic, yang berarti algoritma ini memi
 n-Queen adalah sebuah game dimana kita harus menyusun piece of queen dari permainan catur sebanyak n piece ke dalam grid catur berukuran n * n, dimana setiap queen tidak dapat menyerang queen lainnya. Berikut adalah contoh grid 8-queen yang dapat dijadikan goal state :
 
 ![8-Queen-Solved](https://github.com/djtyranix/AIProject/blob/master/nQueen/8queen_solved.png)
+
 Untuk n-Queen sendiri dapat diselesaikan dengan beberapa algoritma, dan akan dibahas 3 metode penyelesaian, yaitu dengan Uninformed Search, Hill-Climbing Search, dan Constraint Satisfaction Problem (4-queen).
 
 ## Uninformed Search
