@@ -290,3 +290,13 @@ Link ke file yang dibuat:
 --Untuk File Belum Ada--
 
 A-Star merupakan salah satu algoritma Heuristic, yang berarti algoritma ini memiliki informasi yang di dapat terlebih dahulu, baru dilakukan traversal. Metode search seperti ini juga biasa disebut dengan metode informed search. A-Star search menerapkan 2 heuristic search disini, yaitu Best-First Search dan Cost Function. Best First Search adalah algoritma dimana search akan berlanjut dengan cara yang sedikit berbeda. Best-First Search akan melakukan traverse dengan melihat edge mana yang memiliki weight terkecil/terbesar (tergantung dengan problem yang akan diselesaikan, jika dalam hal ini berarti yang terkecil). Cost Function adalah sebuah fungsi untuk menghitung "jarak" atau cost untuk suatu move. Dalam hal 8-Puzzle, cost function yang sering digunakan adalah Manhattan Distance. Ini berarti, A-Star algorithm dapat mencari node yang menjadi goal state dengan waktu yang lebih cepat dibandingkan dengan uninformed search seperti BFS, DFS, maupun IDS.
+
+
+# n-Queen
+n-Queen adalah sebuah game dimana kita harus menyusun piece of queen dari permainan catur sebanyak n piece ke dalam grid catur berukuran n * n, dimana setiap queen tidak dapat menyerang queen lainnya. Berikut adalah contoh grid 8-queen yang dapat dijadikan goal state :
+
+![8-Queen-Solved](https://miro.medium.com/max/1000/1*Zm2pbDR5CS2w2xeUbTBxQQ.png)
+
+Untuk n-Queen sendiri dapat diselesaikan dengan beberapa algoritma, dan akan dibahas 3 metode penyelesaian, yaitu dengan Uninformed Search, Hill-Climbing Search, dan Constraint Satisfaction Problem (4-queen).
+
+## Uninformed Search
