@@ -10,6 +10,7 @@ Surabaya, Indonesia
 
 * [8-Puzzle](https://github.com/djtyranix/AIProject#8-puzzle)
 * [n-Queen](https://github.com/djtyranix/AIProject#n-queen)
+* [Tic Tac Toe](https://github.com/djtyranix/AIProject#tic-tac-toe)
 
 # 8-Puzzle
 8-Puzzle adalah sebuah game yang dimana objective dari game tersebut adalah menggeser angka-angka yang ada sehingga menjadi suatu yang dinamakan "goal state".
@@ -317,4 +318,4 @@ Tic-Tac-Toe adalah sebuah permainan klasik dimana permainan ini akan dimainkan o
 ## Minimax Algorithm
 Algoritma minimax adalah algoritma dimana program akan berusaha mencari nilai maksimal (atau move terbaik) untuk melanjutkan game. Algoritma ini akan menelusuri seluruh kemungkinan yang akan terjadi berikutnya ketika program melakukan satu move. Dikatakan minimax karena program akan berusaha mencari outcome (move) terbaik atau kerugian minimal pada worst case (maximum loss). Hal ini berarti program akan mengambil langkah yang "max" supaya player mendapatkan "min". Berikut adalah gambar penjabaran minimax :
 
-![minimax]()
+![minimax](https://github.com/djtyranix/AIProject/blob/master/TicTacToe/minimax.png)
