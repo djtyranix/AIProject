@@ -18,7 +18,7 @@ Link ke file yang dibuat:
 * [8puzzlebfs.c](https://github.com/djtyranix/AIProject/blob/master/8%20Puzzle/BFS/8puzzlebfs.c) - 8-Puzzle Solver BFS
 
 Breadth-First Search adalah pencarian "Brute Force" a.k.a. uninformed search dengan prioritas level terlebih dahulu, sehingga akan mengeksplor seluruh children dari 1 node tertentu dan neighbors dahulu baru dilanjutkan ke tingkat depth bawahnya.
-```
+```c
 solutionPath* BFS_search(State *init, State *goalState)
 {
 	NodeList *queue = NULL;
