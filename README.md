@@ -282,6 +282,8 @@ Link ke file yang dibuat:
 * [8puzzleids.c](https://github.com/djtyranix/AIProject/blob/master/8%20Puzzle/IDS/8puzzleids.c) - 8-Puzzle Solver IDS
 --Untuk File Belum Ada--
 
+Untuk IDS, sebenarnya sama seperti dengan DFS. Perbedaannya terletak pada adanya batas depth yang akan ditelusuri sehingga tidak akan terjadi infinite loop. Ada variabel yang menyimpan current depth dari tree yang sedang di traverse, sehingga dapat di set ketinggian maksimal dalam melakukan DFS. Jika goal state belum ditemukan, akan dilakukan iterasi per batas yang telah ditentukan. Jika batasnya 3, maka DFS akan mulai dari root node (depth = 0) sampai ke depth = 3, lalu mulai trace back ke sekitarnya sampai tidak ada node lagi yang belum dieksplor di depth = 3. Ketika semua sudah tereksplor dan goal state belum ditemukan, maka akan di iterasi untuk 3 kedalaman berikutnya, yaitu sampai depth = 6, begitu seterusnya sampai goal state ditemukan.
+
 ## A-Star Search (A* S)
 Link ke file yang dibuat:
 * [8puzzleastar.c](https://github.com/djtyranix/AIProject/blob/master/8%20Puzzle/AStar/8puzzleastar.c) - 8-Puzzle Solver A*
