@@ -8,6 +8,9 @@ Sepuluh Nopember Institute of Technology
 
 Surabaya, Indonesia
 
+* [8 Puzzle](# 8-Puzzle)
+* [n-Queen](# n-Queen)
+
 # 8-Puzzle
 8-Puzzle adalah sebuah game yang dimana objective dari game tersebut adalah menggeser angka-angka yang ada sehingga menjadi suatu yang dinamakan "goal state".
 Untuk mencapai goal state, pemain dapat menggerakkan angka-angka yang dapat bergerak sehingga state dari game boardnya berubah.
